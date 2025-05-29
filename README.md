@@ -1,2 +1,2 @@
 # javascriptTutorial
-This is a Javascript Project Repository.
+This is a JavaScript Project Repository.
