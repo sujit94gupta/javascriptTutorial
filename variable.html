@@ -1,7 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Variable123</title>
+    <title>JavaScript Variable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Variables</h1>
+    <p>In JavaScript, variables are used to store data values. You can declare a variable using the keywords
+        <code>let</code>, <code>const</code>, or <code>var</code>.</p>
+
+    <h2>Declaring Variables</h2>
+    <ul>
+        <li><strong>let:</strong> Used to declare block-scoped variables.</li>
+        <li><strong>const:</strong> Used to declare block-scoped constants that cannot be reassigned.</li>
+        <li><strong>var:</strong> Used to declare function-scoped or globally scoped variables (not recommended in
+            modern JavaScript).</li>
+    </ul>
+
+    <h2>Examples</h2>
+    <pre><code>
+        // Using let
+        let name = "John";
+        let age = 30;
+
+        // Using const
+        const pi = 3.14;    
+        console.log(name); // Output: John
+        console.log(age); // Output: 30
+        
+        // Using var
+        var city = "New York";
+        console.log(name); // Output: John
+        console.log(age); // Output: 30
+        console.log(pi); // Output: 3.14
+
+        console.log(city); // Output: New York
+        </code></pre>
+
+    <h2>Variable Naming Rules</h2>
+    <ul>
+        <li>Variable names must start with a letter, underscore (_), or dollar sign ($).</li>
+        <li>Subsequent characters can be letters, numbers, underscores, or dollar signs.</li>
+        <li>Variable names are case-sensitive (e.g., <code>myVar</code> and <code>myvar</code> are different variables).
+        </li>
+        <li>Avoid using reserved keywords (e.g., <code>if</code>, <code>for</code>, <code>function</code>) as variable
+            names.</li>
+    </ul>
+
+    <h2>Resources</h2>
+    <p>For more information on JavaScript variables, check out the following resources:</p>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables">MDN Web
+                Docs - Variables</a></li>
+        <li><a href="https://www.w3schools.com/js/js_variables.asp">W3Schools - JavaScript Variables</a></li>
+        <li><a href="https://javascript.info/variables">JavaScript.info - Variables</a></li>
+    </ul>
+
 </html>
