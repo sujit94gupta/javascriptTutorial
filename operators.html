@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Operators</h1>
+    <p>JavaScript provides a variety of operators to perform operations on variables and values. Here are some common
+        types of operators:</p>
+
+    <h2>Arithmetic Operators</h2>
+    <ul>
+        <li><code>+</code>: Addition</li>
+        <li><code>-</code>: Subtraction</li>
+        <li><code>*</code>: Multiplication</li>
+        <li><code>/</code>: Division</li>
+        <li><code>%</code>: Modulus (remainder)</li>
+        <li><code>**</code>: Exponentiation (ES2016)</li>
+    </ul>
+
+    <h2>Comparison Operators</h2>
+    <ul>
+        <li><code>==</code>: Equal to (value only)</li>
+        <li><code>===</code>: Strict equal to (value and type)</li>
+        <li><code>!=</code>: Not equal to (value only)</li>
+        <li><code>!==</code>: Strict not equal to (value and type)</li>
+        <li><code>&lt;</code>: Less than</li>
+        <li><code>&gt;</code>: Greater than</li>
+        <li><code>&lt;=</code>: Less than or equal to</li>
+        <li><code>&gt;=</code>: Greater than or equal to</li>
+    </ul>
+
+    <h2>Logical Operators</h2>
+    <ul>
+        <li><code>&&</code>: Logical AND</li>
+        <li><code>||</code>: Logical OR</li>
+        <li><code>!</code>: Logical NOT</li>
+    </ul>
+
+    <h2>Assignment Operators</h2>
+    <ul>
+        <li><code>=</code>: Assignment</li>
+        <li><code>+=</code>: Add and assign</li>
+        <li><code>-=</code>: Subtract and assign</li>
+        <li><code>*=</code>: Multiply and assign</li>
+        <li><code>/=</code>: Divide and assign</li>
+        <li><code>%=</code>: Modulus and assign</li>
+    </ul>
+
+    <h2>Bitwise Operators</h2>
+    <ul>
+        <li><code>&</code>: Bitwise AND</li>
+        <li><code>|</code>: Bitwise OR</li>
+        <li><code>^</code>: Bitwise XOR</li>
+        <li><code>~</code>: Bitwise NOT</li>
+        <li><code>&lt;&lt;</code>: Left shift</li>
+        <li><code>&gt;&gt;</code>: Right shift</li>
+        <li><code>&gt;&gt;&gt;</code>: Unsigned right shift</li>
+    </ul>
+
+    <h2>Type Operators</h2>
+    <ul>
+        <li><code>typeof</code>: Returns the type of a variable</li>
+        <li><code>instanceof</code>: Tests whether an object is an instance of a specific class or constructor function
+        </li>
+    </ul>
+
+    <h2>Conditional (Ternary) Operator</h2>
+    <p>The conditional operator is a shorthand for an if-else statement:</p>
+    <ul>
+        <li><code>condition ? expr1 : expr2</code>: If the condition is true, it evaluates to <code>expr1</code>;
+            otherwise, it evaluates to <code>expr2</code>.</li>
+    </ul>
+
+    <h2>Example</h2>
+    <pre><code>
+        let a = 10;
+        let b = 5;
+
+        // Arithmetic Operators
+        console.log(a + b); // Output: 15
+        console.log(a - b); // Output: 5
+        console.log(a * b); // Output: 50
+        console.log(a / b); // Output: 2
+        console.log(a % b); // Output: 0
+
+        // Comparison Operators
+        console.log(a == b); // Output: false
+        console.log(a === 10); // Output: true
+        console.log(a != b); // Output: true
+        console.log(a !== '10'); // Output: true
+        console.log(a &gt; b); // Output: true
+
+        // Logical Operators
+        console.log(true && false); // Output: false
+        console.log(true || false); // Output: true
+        console.log(!true); // Output: false
+
+        // Assignment Operators
+        a += 5; // a = a + 5
+        console.log(a); // Output: 15
+        b *= 2; // b = b * 2
+        console.log(b); // Output: 10
+        b -= 5; // b = b - 5
+        console.log(b); // Output: 5
+        b /= 5; // b = b / 5
+        console.log(b); // Output: 1
+        b %= 2; // b = b % 2
+        console.log(b); // Output: 1
+
+        // Bitwise Operators
+        console.log(a & b); // Output: 10 (1010 & 1010)
+        console.log(a | b); // Output: 15 (1111 | 1010)
+        console.log(a ^ b); // Output: 5 (1111 ^ 1010)
+        console.log(~a); // Output: -16 (bitwise NOT)
+        console.log(a &lt;&lt; 1); // Output: 30 (left shift)
+        console.log(a &gt;&gt; 1); // Output: 7 (right shift)
+
+        // Type Operators
+        console.log(typeof b); // Output: "number"
+        console.log(typeof 'Hello'); // Output: "string"    
+        console.log(typeof true); // Output: "boolean"
+        console.log(typeof null); // Output: "object" (this is a known JavaScript quirk)
+        console.log(typeof undefined); // Output: "undefined"
+        console.log(typeof Symbol('symbol')); // Output: "symbol"
+        console.log(typeof [1, 2, 3]); // Output: "object" (arrays are objects in JavaScript)
+        console.log(typeof function() {}); // Output: "function" (functions are a special type of object)
+        console.log(typeof new Date()); // Output: "object" (Date is an object in JavaScript)
+        console.log(typeof NaN); // Output: "number" (NaN is a special numeric value)
+        console.log(typeof BigInt(12345678901234567890)); // Output: "bigint" (BigInt is a new numeric type in JavaScript)
+        console.log(a instanceof Number); // Output: false
+        console.log(b instanceof Number); // Output: false
+        console.log(b instanceof Object); // Output: false       
+
+        // Conditional (Ternary) Operator
+        let max = (a > b) ? a : b;
+        console.log(max); // Output: 15
+        // Example of a function using the conditional operator
+        function checkEvenOdd(num) {
+            return (num % 2 === 0) ? 'Even' : 'Odd';
+        }
+        console.log(checkEvenOdd(10)); // Output: "Even"
+        console.log(checkEvenOdd(7)); // Output: "Odd"
+    </code></pre>
+    <h2>Resources</h2>
+    <p>For more information on JavaScript operators, check out the following resources:</p>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Operators_and_expressions">MDN Web
+                Docs - Operators and Expressions</a></li>
+        <li><a href="https://www.w3schools.com/js/js_operators.asp">W3Schools - JavaScript Operators</a></li>
+        <li><a href="https://javascript.info/operators">JavaScript.info - Operators</a></li>
+    </ul>
+</body>
+
+</html>
