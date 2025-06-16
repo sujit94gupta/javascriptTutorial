@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <p>Strings in JavaScript are used to represent text. They can be created using single quotes, double quotes, or backticks.</p>
+
+    <h2>Creating Strings</h2>
+    <ul>
+        <li>Single quotes: <code>'Hello'</code></li>
+        <li>Double quotes: <code>"Hello"</code></li>
+        <li>Backticks (template literals): <code>`Hello`</code></li>
+    </ul>
+
+    <h2>Examples</h2>
+    <pre><code>
+        // Using single quotes
+        let greeting = 'Hello, World!';
+
+        // Using double quotes
+        let farewell = "Goodbye, World!";
+
+        // Using backticks
+        let name = 'John';
+        let message = `Hello, ${name}!`;
+    </code></pre>
+
+    <h2>String Methods</h2>
+    <ul>
+        <li><code>.length</code>: Returns the length of the string.</li>
+        <li><code>.toUpperCase()</code>: Converts the string to uppercase.</li>
+        <li><code>.toLowerCase()</code>: Converts the string to lowercase.</li>
+        <li><code>.substring(start, end)</code>: Extracts a substring from the string.</li>
+        <li><code>.indexOf(substring)</code>: Returns the index of the first occurrence of a substring.</li>
+    </ul>
+
+    <h2>Example of String Methods</h2>
+    <pre><code>
+        let text = 'JavaScript is fun!';
+        
+        console.log(text.length); // 20
+        console.log(text.toUpperCase()); // JAVASCRIPT IS FUN!
+        console.log(text.toLowerCase()); // javascript is fun!
+        console.log(text.substring(0, 10)); // JavaScript
+        console.log(text.indexOf('fun')); // 15
+    </code></pre>
+    <h2>String Concatenation</h2>
+    <p>Strings can be concatenated using the <code>+</code> operator or template literals.</p>
+    <pre><code>
+        let firstName = 'John';
+        let lastName = 'Doe';
+
+        // Using + operator
+        let fullName = firstName + ' ' + lastName;
+
+        // Using template literals
+        let fullNameTemplate = `${firstName} ${lastName}`;
+
+        console.log(fullName); // John Doe
+        console.log(fullNameTemplate); // John Doe
+    </code></pre>
+    <h2>Escape Characters</h2>
+    <p>To include special characters in strings, you can use escape characters:</p>
+    <ul>
+        <li><code>\'</code>: Single quote</li>
+        <li><code>\"</code>: Double quote</li>
+        <li><code>\\</code>: Backslash</li>
+        <li><code>\n</code>: New line</li>
+        <li><code>\t</code>: Tab</li>
+    </ul>
+    <h2>Example of Escape Characters</h2>
+    <pre><code>
+        let quote = 'She said, "Hello!"';
+        let escapedQuote = 'She said, \"Hello!\"';
+        let newLineExample = 'First line\nSecond line';
+
+        console.log(quote); // She said, "Hello!"
+        console.log(escapedQuote); // She said, "Hello!"
+        console.log(newLineExample); // First line
+                                    // Second line
+    </code></pre>
+</body>
+</html>

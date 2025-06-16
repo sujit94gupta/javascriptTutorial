@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <p>Arrays in JavaScript are used to store multiple values in a single variable. They can hold items of any type, including numbers, strings, and even other arrays.</p>
+
+    <h2>Creating Arrays</h2>
+    <ul>
+        <li>Using array literals: <code>let fruits = ['apple', 'banana', 'cherry'];</code></li>
+        <li>Using the Array constructor: <code>let numbers = new Array(1, 2, 3);</code></li>
+    </ul>
+
+    <h2>Accessing Array Elements</h2>
+    <p>Array elements can be accessed using their index, starting from 0:</p>
+    <pre><code>
+        let fruits = ['apple', 'banana', 'cherry'];
+        console.log(fruits[0]); // Output: apple
+        console.log(fruits[1]); // Output: banana
+        console.log(fruits[2]); // Output: cherry
+    </code></pre>
+    <h2>Array Methods</h2>
+    <p>JavaScript provides many built-in methods to manipulate arrays:</p>
+    <ul>
+        <li><code>push()</code>: Adds one or more elements to the end of an array.</li>
+        <li><code>pop()</code>: Removes the last element from an array.</li>
+        <li><code>shift()</code>: Removes the first element from an array.</li>
+        <li><code>unshift()</code>: Adds one or more elements to the beginning of an array.</li>
+        <li><code>splice()</code>: Adds or removes elements from an array at a specified index.</li>
+        <li><code>slice()</code>: Returns a shallow copy of a portion of an array into a new array.</li>
+        <li><code>forEach()</code>: Executes a provided function once for each array element.</li>
+        <li><code>map()</code>: Creates a new array populated with the results of calling a provided function on every element in the calling array.</li>
+        <li><code>filter()</code>: Creates a new array with all elements that pass the test implemented by the provided function.</li>
+        <li><code>reduce()</code>: Executes a reducer function on each element of the array, resulting in a single output value.</li>
+        <li><code>find()</code>: Returns the value of the first element in the array that satisfies the provided testing function.</li>
+        <li><code>includes()</code>: Determines whether an array includes a certain value among its entries.</li>
+        <li><code>indexOf()</code>: Returns the first index at which a given element can be found in the array, or -1 if it is not present.</li>
+        <li><code>join()</code>: Joins all elements of an array into a string.</li>
+        <li><code>sort()</code>: Sorts the elements of an array in place and returns the sorted array.</li>
+        <li><code>reverse()</code>: Reverses the elements of an array in place.</li>
+        <li><code>length</code>: Returns the number of elements in the array.</li>
+    </ul>
+    <h2>Examples</h2>
+    <pre><code>
+        let fruits = ['apple', 'banana', 'cherry'];
+
+        // Adding an element
+        fruits.push('date');
+        console.log(fruits); // Output: ['apple', 'banana', 'cherry', 'date']
+
+        // Removing the last element
+        fruits.pop();
+        console.log(fruits); // Output: ['apple', 'banana', 'cherry']
+
+        // Accessing elements
+        console.log(fruits[0]); // Output: apple
+
+        // Iterating over an array
+        fruits.forEach((fruit) => {
+            console.log(fruit);
+        });
+
+        // Creating a new array with lengths of each fruit name
+        let lengths = fruits.map((fruit) => fruit.length);
+        console.log(lengths); // Output: [5, 6, 6]
+
+        // Filtering fruits that contain the letter 'a'
+        let filteredFruits = fruits.filter((fruit) => fruit.includes('a'));
+        console.log(filteredFruits); // Output: ['banana']
+
+        // Finding the first fruit that starts with 'c'
+        let foundFruit = fruits.find((fruit) => fruit.startsWith('c'));
+        console.log(foundFruit); // Output: cherry
+
+        // Joining the array into a string
+        let fruitString = fruits.join(', ');
+        console.log(fruitString); // Output: apple, banana, cherry
+
+        // Sorting the array
+        fruits.sort();
+        console.log(fruits); // Output: ['apple', 'banana', 'cherry']
+        
+        // Reversing the array
+        fruits.reverse();
+        console.log(fruits); // Output: ['cherry', 'banana', 'apple']
+    </code></pre>
+    <h2>Resources</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">MDN Web Docs - Array</a></li>
+        <li><a href="https://www.w3schools.com/js/js_arrays.asp" target="_blank">W3Schools - JavaScript Arrays</a></li>
+        <li><a href="https://javascript.info/array" target="_blank">JavaScript.info - Arrays</a></li>
+    </ul>
+</body>
+</html>
