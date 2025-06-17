@@ -17,15 +17,15 @@
     </div>
 
 </body>
-    <script>
+<script>
+    let rows = 5;
 
-        let name=1234567890n;
-        const a=10;
-        const b=20
-
-        const obj = document.getElementById("example");
-        obj.innerHTML = `<h2>Hello, ${a+b}!</h2>`;
-
-    </script>
+    for (let i = 1; i <= rows; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>
 
 </html>
