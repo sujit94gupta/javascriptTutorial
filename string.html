@@ -70,6 +70,23 @@
         <li><code>.toLowerCase()</code>: Converts the string to lowercase.</li>
         <li><code>.substring(start, end)</code>: Extracts a substring from the string.</li>
         <li><code>.indexOf(substring)</code>: Returns the index of the first occurrence of a substring.</li>
+        <li><code>.includes(substring)</code>: Checks if the string contains a substring.</li>
+        <li><code>.replace(searchValue, newValue)</code>: Replaces a substring with a new value.</li>
+        <li><code>.trim()</code>: Removes whitespace from both ends of the string.</li>
+        <li><code>.split(separator)</code>: Splits the string into an array of substrings based on a separator.</li>
+        <li><code>.charAt(index)</code>: Returns the character at a specified index.</li>
+        <li><code>.charCodeAt(index)</code>: Returns the Unicode value of the character at a specified index.</li>      
+        <li><code>.startsWith(searchString)</code>: Checks if the string starts with a specified substring.</li>
+        <li><code>.endsWith(searchString)</code>: Checks if the string ends with a specified substring.</li>
+        <li><code>.repeat(count)</code>: Returns a new string with the specified number of repetitions of the original string.</li> 
+        <li><code>.localeCompare(compareString)</code>: Compares two strings in the current locale.</li>
+        <li><code>.match(regexp)</code>: Matches a string against a regular expression and returns an array of matches.</li>
+        <li><code>.search(regexp)</code>: Searches for a match between a regular expression and the string, returning the index of the first match.</li>
+        <li><code>.concat(...strings)</code>: Combines two or more strings into one.</li>
+        <li><code>.padStart(targetLength, padString)</code>: Pads the current   string with another string (the <code>padString</code>) until the resulting string reaches the given <code>targetLength</code>.</li>    
+        <li><code>.padEnd(targetLength, padString)</code>: Pads the current string with another string (the <code>padString</code>) until the resulting string reaches the given <code>targetLength</code>.</li>
+        <li><code>.toString()</code>: Converts the string to a string (useful for converting other data types to strings).</li>
+        <li><code>.valueOf()</code>: Returns the primitive value of the string object.</li>     
     </ul>
 
     <h2>Example of String Methods</h2>
@@ -81,6 +98,24 @@
         console.log(text.toLowerCase()); // javascript is fun!
         console.log(text.substring(0, 10)); // JavaScript
         console.log(text.indexOf('fun')); // 15
+        console.log(text.includes('Java')); // true
+        console.log(text.replace('fun', 'awesome')); // JavaScript is awesome!
+        console.log(text.trim()); // JavaScript is fun!
+        console.log(text.split(' ')); // ['JavaScript', 'is', 'fun!']
+        console.log(text.charAt(0)); // J   
+        console.log(text.charCodeAt(0)); // 74 (Unicode value of 'J')
+        console.log(text.startsWith('Java')); // true
+        console.log(text.endsWith('fun!')); // true
+        console.log(text.repeat(2)); // JavaScript is fun!JavaScript is fun!
+        console.log(text.localeCompare('JavaScript is great!')); // -1 (indicating 'text' comes before the compared string)
+        console.log(text.match(/fun/)); // ['fun']
+        console.log(text.search(/is/)); // 11
+        console.log(text.concat(' Let\'s code!')); // JavaScript is fun! Let's
+        console.log(text.padStart(30, '*')); // **********JavaScript is fun!
+        console.log(text.padEnd(30, '*')); // JavaScript is fun!**********
+        console.log(text.toString()); // JavaScript is fun!
+        console.log(text.valueOf()); // JavaScript is fun!
+        console.log(text.toString() === text.valueOf()); // true
     </code></pre>
     <h2>String Concatenation</h2>
     <p>Strings can be concatenated using the <code>+</code> operator or template literals.</p>
